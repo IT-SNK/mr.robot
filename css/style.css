@@ -166,14 +166,10 @@ color: #9F9F9F;
 .feture__text {
     margin: 25.35px 28.8px 20px 16.46px;
 }
-.feture__text a {
-    text-decoration: none;
-}
-
 .feture__elle {
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 16px;
     color: #000000;
     margin-bottom: 12.65px;
@@ -225,7 +221,18 @@ height: 48px;
    
     text-align: center;
 }
-
+/*
+.first__item:nth-child(1n) {
+   text-align: center;
+    
+    
+}
+.first__item:nth-child(2n) {
+    background: url('../img/icon2.png')no-repeat;
+}
+.first__item:nth-child(3n) {
+    background: url('../img/icon3.png')no-repeat;
+}*/
 .sales {
     display: flex;
     justify-content: space-between;
@@ -346,7 +353,6 @@ padding: 7px 7px 6px 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
 }
 .footer__together {
     display: flex;
@@ -366,7 +372,8 @@ padding: 7px 7px 6px 8px;
     color: #FBFBFB;
 }
 .link__icons {
-    margin: 0px 7px;
+ 
+    margin: 24px 7px;
 }
 .link__icons:not(:last-child) {
     margin-right: 7px;
@@ -442,10 +449,9 @@ margin-left: 12px;
 .filter__all {
 display: flex;
 }
-
 .filter__right{
 display: flex;
-margin-left: 304px;
+margin-left: 374px;
 }
 .menu__filteres {
     text-transform: uppercase;
@@ -456,8 +462,56 @@ margin-left: 304px;
     color: #6F6E6E;
     outline: none;/* убрать границы option */
 }
-.filter__text{
 
+.filter__left{
+position: absolute;
+outline: none;
+  border: none;
+}
+.filter__down{
+    display: block;
+    font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+color: #000000;
+}
+
+.filter__ladder {
+    margin-left: 11px;
+}
+.flter__catlist {
+    position:relative ;
+    width: 327.5px;
+    height: 353px;
+}
+.filter__deep {
+ display: block;
+    border-left: 5px solid #EF5B70;;
+    padding: 10px;
+    outline: none;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #EF5B70;
+}
+.filter__points {
+    width: 141px;
+height: 230px;
+list-style-type: none;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: #6F6E6E;
+}
+.filter__points a {
+text-decoration: none;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #6F6E6E;
 }
 .filter__items {
 margin-right: 28px;
@@ -476,14 +530,15 @@ margin-right: 14px;
 .mens__all {
     margin: 100px 0 100px 0;
 }
-.wrap__mens {
+.mens__wrap {
+    
     display: flex;
     flex-wrap: wrap;
 }
 .mens {
     width: 360px;
     height: 581px; 
-    margin: 0 20px 30px 0;   
+    margin:0 20px 30px 0;   
    
 }
 .only__afro {
@@ -524,6 +579,8 @@ margin-top: 18px;
 .btn__catalog {
     display: flex;
     justify-content: center;
+   
+ 
 }
 .button__active__link{
     width: 284px;
