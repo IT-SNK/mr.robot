@@ -166,6 +166,10 @@ color: #9F9F9F;
 .feture__text {
     margin: 25.35px 28.8px 20px 16.46px;
 }
+.feture__text a {
+    text-decoration: none;
+}
+
 .feture__elle {
     font-style: normal;
     font-weight: bold;
