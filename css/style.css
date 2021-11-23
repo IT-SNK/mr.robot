@@ -225,18 +225,7 @@ height: 48px;
    
     text-align: center;
 }
-/*
-.first__item:nth-child(1n) {
-   text-align: center;
-    
-    
-}
-.first__item:nth-child(2n) {
-    background: url('../img/icon2.png')no-repeat;
-}
-.first__item:nth-child(3n) {
-    background: url('../img/icon3.png')no-repeat;
-}*/
+
 .sales {
     display: flex;
     justify-content: space-between;
