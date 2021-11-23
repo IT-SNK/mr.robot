@@ -524,24 +524,23 @@ margin-top: 18px;
 .btn__catalog {
     display: flex;
     justify-content: center;
-    width: 284px;
-    height: 44px; 
-    padding: 11.5px 20px 12.5px 20px; 
 }
 .button__active__link{
+    width: 284px;
+    height: 44px; 
+    border: 1px solid #EBEBEB;
   align-items: center;
-  height: 29px;
-  border: 1px solid #EBEBEB;
-border-radius: 2px;
-
+  padding: 11.5px 15.45px 12.5px 15.45px;
+  align-items: center;
+display: flex;
+justify-content: center;
+justify-content: space-between;
 }
 .w3-button {
     text-decoration: none;
     font-style: normal;
 font-weight: 300;
 font-size: 16px;
-line-height: 19px;
-margin: 21px 8px 22px 0px;
 color: #C4C4C4;
 }
 .w3-button:hover {
@@ -551,5 +550,5 @@ color: #C4C4C4;
     font-weight: bold;
     color: #000000;
     text-decoration: none;
-   margin: 0px 8px;
+ 
 }
