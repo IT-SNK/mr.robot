@@ -4,20 +4,15 @@
     margin: 0;
     box-sizing: border-box;
     border:0;/*убрать края радиусов*/
-    
-    
 }
 body {
     font-family: 'Lato';
 }
-
 .header {
     background: #222222;
     color: white;
     padding: 19px 0;
 }
-
-
 .container {
     max-width: 1160px;
     width: 100%;
@@ -83,7 +78,6 @@ background: url('../img/women.jpg')no-repeat;
 background: url('../img/width__photo.jpg')no-repeat;
 }
 .category__catitem:not(:last-child){
-    
     width: 360px;
     height: 260px;
     margin: 0 0 30px 0;
@@ -96,12 +90,9 @@ line-height: 19px;
 color: #FFFFFF;
 }
 .category__cattext {
- 
     text-align: center;
 }
-
 .category__catdown {
-   
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -116,7 +107,6 @@ color: #FFFFFF;
 .feture__wrap{
     display: flex;
     flex-wrap: wrap;
-    
 }
 .feture__glovo {
    text-align: center;
@@ -176,18 +166,14 @@ color: #9F9F9F;
     font-size: 16px;
 line-height: 19px;
 color: #F16D7F;
-
 }
-
 .button{
    margin-bottom: 95px;
- 
 }
 .btn {
     display: flex;
     justify-content: center; 
 }
-
 .button__info {
 width: 212px;
 height: 48px;
@@ -204,24 +190,20 @@ height: 48px;
     height: 100%;
 align-items: center;
 }
-
 .free__sales {
     background: #222222;
     color: white;
     height: 341px;
 }
 .free__item {
-   
     text-align: center;
 }
-
 .free__text{
     padding: 19.07px 0 16.01px 0;
     font-size: 19.96px;
     line-height: 24px;
     color: #FBFBFB;
     }
-  
 .free__para{
     width:300px;
     height: 34px;
@@ -235,28 +217,21 @@ align-items: center;
     background: url(../img/button_subscribe.png)no-repeat;
     background-size: cover;
     height:448px;
-    
-   
 }
 .footer__glovo {
     display: flex;
     justify-content: space-between;
 }
 .footer__left {
-    
    background: url('../img/Intersect.png')no-repeat;
     width: 360px;
     margin-top: 97px;
     background-position: top center;/*для картинки центрировать*/
-   
-   
 }
 
 .footer__right {
     display: flex;
     flex-direction:column;
-    
-  
 }
 .footer__leftword {
     font-style: normal;
@@ -266,7 +241,6 @@ align-items: center;
     text-align: center;
     color: #222224;
     margin-top: 138px;
-    
 }
 .footer__rightword {
     font-weight: bold;
@@ -287,10 +261,8 @@ margin-bottom: 32px;
 }
 .email {
     display: flex;
-    
 }
 .email__field {
-
     width: 256px;
     height: 49px;
     border-top-left-radius: 24px;
@@ -345,7 +317,6 @@ padding: 7px 7px 6px 8px;
     color: #FBFBFB;
 }
 .second__footicons {
- 
     margin: 24px 7px;
 }
 .second__footicons:not(:last-child) {

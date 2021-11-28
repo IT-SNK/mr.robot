@@ -1,37 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    border:0;/*убрать края радиусов*/
-    
-    
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+border:0;/*убрать края радиусов*/
 }
 body {
     font-family: 'Lato';
 }
-
 .header {
-    background: #222222;
-    color: white;
-    padding: 19px 0;
+background: #222222;
+color: white;
+ padding: 19px 0;
 }
-
-
 .container {
-    max-width: 1160px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
+max-width: 1160px;
+width: 100%;
+margin: 0 auto;
+padding: 0 10px;
 }
 .header__headerlogo{
-    text-decoration: none;
-    margin-right: 41px;
+text-decoration: none;
+margin-right: 41px;
 }
 .header__headerwrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /*выравнивание по центру по вертикали*/
+display: flex;
+justify-content: space-between;
+align-items: center; /*выравнивание по центру по вертикали*/
 }
 .header__headeritem:not(:last-child) {
 margin-right: 33px;
@@ -40,18 +35,17 @@ margin-right: 33px;
     background:#F8F3F4;
 }
 .arrivals__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 .arrivals__left {
-    font-weight: normal;
+font-weight: normal;
 font-size: 24px;
 line-height: 29px;
 margin: 65px 0 66px 0;
 }
 .arrivals__text {
-
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
@@ -60,38 +54,43 @@ color: #F16D7F;
 text-decoration: none;
 }
 .arrivals__right {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+display: flex;
+justify-content: space-between;
+list-style-type: none;
     /*border-left: 1px solid #636363;*/
 }
-.arrivals__links {
-    text-decoration: none;
-    margin-left: 12px;
-    font-weight: 300;
+.arrivals__right a{
+text-decoration: none;
+font-weight: 300;
 font-size: 14px;
 line-height: 17px;
-
 color: #636363;
 }
-.arrivals__links:nth-child(3){
-    color: #F16D7F;
-    font-style: normal;
+.arrivals__right a:nth-child(3){
+color: #F16D7F;
+font-style: normal;
 font-weight: bold;
 font-size: 14px;
 line-height: 17px;
-margin-left: 12px;
+text-decoration: none;
+}
+.arrivals__right a:nth-child(1)::after{
+content:"/";
+margin: 0 5px 0 5px;
+}
+.arrivals__right a:nth-child(2)::after{
+content:"/";
+margin: 0 5px 0 5px;
 }
 .filter {
     margin: 51px 0px 64px 0px;
 }
 .filter__content {
-    position: absolute;
-    background-color: #FFFFFF;
-    width: 360px;
-   
-    left: 0;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+position: absolute;
+background-color: #FFFFFF;
+width: 360px;
+left: 0;
+box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 .filter__all {
 display: flex;
@@ -108,21 +107,17 @@ margin-left: 400px;
     line-height: 17px;
     color: #6F6E6E;
     outline: none;/* убрать границы option */
-    background: #FFFFFF;
-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    
+    background: #FFFFFF;  
 }
 .filter__round {
     background: #FFFFFF;
 box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
-
 .filter__left{
 position: absolute;
 outline: none;
   border: none;
 }    
-
 .filter__down{
     display: block;
     font-style: normal;
@@ -130,6 +125,7 @@ font-weight: 600;
 font-size: 14px;
 line-height: 20px;
 color: #000000;
+margin-left: 10px;
 }
 .filter__down:hover {
     color: #F16D7F;
@@ -144,7 +140,7 @@ color: #000000;
     border: none;
 }
 .filter__up[open]{
-    
+    margin-bottom: 20px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 } 
   .filter__up[open]>summary {
@@ -157,39 +153,39 @@ color: #000000;
 }
 .filter__ladder:hover {
 fill: #F16D7F;
-
 }
 .flter__catlist {
     position:relative ;
     background-color: #FFFFFF;
     width: 360px;
     border: 1px solid #EBEBEB;
-    
-    
     height: 531px;
 }
 .filter__deep {
  display: block;
     border-left: 5px solid #EF5B70;
     border-bottom: 1px solid #EBEBEB;
-    padding: 10px;
+    padding: 15px;
     outline: none;
     font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 17px;
+margin: 20px 0 0px 10px;
 color: #EF5B70;
+}.filter__deep:nth-child(3){
+    margin-bottom: 0px;
 }
 .filter__points {
     width: 360px;
-height: 425px;
+height: 344px;
 list-style-type: none;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 29px;
 color: #6F6E6E;
-padding:36px 0 0 17px;
+padding:17px 0 0 17px;
 }
 .filter__points a {
 text-decoration: none;
@@ -200,14 +196,11 @@ color: #6F6E6E;
 }
 .filter__items {
 margin-right: 28px;
-
 }
-
 .mens__all {
     margin: 100px 0 48.5px 0;
 }
 .mens__wrap {
-    
     display: flex;
     flex-wrap: wrap;
 }
@@ -215,7 +208,6 @@ margin-right: 28px;
     width: 360px;
     height: 581px; 
     margin:0 20px 30px 0;   
-   
 }
 .mens__onlyafro {
     background: #F7E4E2;
@@ -235,7 +227,6 @@ margin-right: 28px;
     font-size: 16px;
     line-height: 16px;
     color: #000000;
-   
 }
 .mens__paragrph {
 width: 314.74px;
@@ -258,12 +249,9 @@ margin-top: 18px;
 .button {
     padding: 48.5px 0 96.5px 0;
 }
-
 .button__catalog {
     display: flex;
     justify-content: center;
-   
- 
 }
 .button__activelink{
     width: 284px;
@@ -290,7 +278,6 @@ color: #C4C4C4;
     font-weight: bold;
     color: #000000;
     text-decoration: none;
- 
 }
 .free {
     display: flex;
@@ -305,17 +292,14 @@ align-items: center;
     height: 341px;
 }
 .free__item {
-   
     text-align: center;
 }
-
 .free__text{
     padding: 19.07px 0 16.01px 0;
     font-size: 19.96px;
     line-height: 24px;
     color: #FBFBFB;
     }
-  
 .free__para{
     width:300px;
     height: 34px;
@@ -329,28 +313,20 @@ align-items: center;
     background: url(../img/button_subscribe.png)no-repeat;
     background-size: cover;
     height:448px;
-    
-   
 }
 .footer__glovo {
     display: flex;
     justify-content: space-between;
 }
 .footer__left {
-    
    background: url('../img/Intersect.png')no-repeat;
     width: 360px;
     margin-top: 97px;
     background-position: top center;/*для картинки центрировать*/
-   
-   
 }
-
 .footer__right {
     display: flex;
     flex-direction:column;
-    
-  
 }
 .footer__leftword {
     font-style: normal;
@@ -360,7 +336,6 @@ align-items: center;
     text-align: center;
     color: #222224;
     margin-top: 138px;
-    
 }
 .footer__rightword {
     font-weight: bold;
@@ -381,10 +356,8 @@ margin-bottom: 32px;
 }
 .email {
     display: flex;
-    
 }
 .email__field {
-
     width: 256px;
     height: 49px;
     border-top-left-radius: 24px;
@@ -439,7 +412,6 @@ padding: 7px 7px 6px 8px;
     color: #FBFBFB;
 }
 .second__footicons {
- 
     margin: 24px 7px;
 }
 .second__footicons:not(:last-child) {

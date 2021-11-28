@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import 'module/var';
+@mixin CenterAll() {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+$FontColor:#F16D7F;
+$SlidColorAct:lightgray;
+
+* {
+  padding: 0;
+  margin: 0;
+   box-sizing: border-box;
+  border: 0;
+    //убрать края радиусов
+}
+  
+  body {
+    font-family: "Lato";
+  }
+  
+  .container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .header{
+    background: #222222;
+    color: white;
+    padding: 19px 0;
+    &__headerlogo {
+        text-decoration: none;
+        margin-right: 41px;
+      }
+      &__headerwrap{
+     @include CenterAll;
+        /*выравнивание по центру по вертикали*/
+      }
+      &__headeritem{
+          &:not(:last-child){
+            margin-right: 33px;
+          }
+       
+      }
+}
+.arrivals{
+  &__new {
+    background: #F8F3F4;
+  }
+  &__top {
+    @include CenterAll;
+  }
+  &__left{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 65px 0 66px 0;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $FontColor;
+    text-decoration: none;
+  }
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  &__right a{
+    text-decoration: none;
+    font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: #636363;
+  }
+  &__right a:nth-child(3){
+    color: $FontColor;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+  }
+&__right a:nth-child(1)::after{
+  content: "/";
+  margin: 0 5px 0 5px;
+}
+&__right a:nth-child(2)::after{
+  content: "/";
+  margin: 0 5px 0 5px;
+}
+}
+  .wrap {
+    margin-top: 100px;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid #E5E5E5;
+  }
+  
+  .slider {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*// position: relative;*/
+    padding-bottom: 50px;
+    &-btn {
+      background-color: $SlidColorAct;
+      color: #fff;
+      padding: 10px;
+      border: 1px solid rgb(241, 237, 237);
+      /*// position: absolute;*/
+    }
+    &__secondboth {
+      width: 642px;
+      border: 1px solid #EAEAEA;
+      margin-bottom: 64.54px;
+    }
+    &__both {
+      width: 63px;
+      border: 2px solid $FontColor;
+      margin-bottom: 12.1px;
+    }
+    &-btn-left, &-btn-right:hover{
+      color: pink;
+      background-color:$SlidColorAct;
+    }
+    &-btn:active {
+      background-color: #7a7575;;
+  }
+  &__lpress:hover{
+    fill: $FontColor;
+  }
+  &__rpress:hover{
+    fill: $FontColor;
+  }
+  &__about-wrap {
+    width: 1121px;
+    height: 600px;
+    background: #FFFFFF;
+    margin-top: -50px;
+    margin-bottom: 131px;
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  }
+&__info h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: $FontColor;
+  margin: 64px 0 12.1px 0;
+}
+&__info h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  margin-bottom: 48.41px;
+}
+&__button {
+  margin-bottom: 61.5px;
+}
+&__info p{
+  font-family: "Lato";
+  font-style: normal;
+  width: 553px;
+  height: 51.43px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  margin-bottom: 32.22px;
+  color: #5E5E5E;
+}
+&__curtain {
+  @include CenterAll;
+}
+&__info span{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 64.54px;
+  color:$FontColor;
+}
+&__menu {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  outline: none;
+  color: #6F6E6E;
+  margin: 0 22px 48.41px 0;
+}
+&__web a {
+  color:$FontColor;
+  text-decoration: none;
+  border: 1px solid $FontColor;
+  padding: 15.13px 57px 14.12px 22.99px;
+  background: white;
+}
+&__kor{
+  margin: 0 22px 0 24px;
+}
+&__ssilka{
+@include CenterAll;
+text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+}
+
+  
+.threemens {
+    margin-bottom: 128px;
+&__wrap {
+  display: flex;
+ }
+&__item {
+  width: 360px;
+  height: 581px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+&__text{
+  margin: 25.35px 28.8px 20px 16.46px;
+}
+&__elle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 12.65px;
+}&__text a {
+  text-decoration: none;
+}
+&__know {
+  width: 314.74px;
+  height: 51px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  margin-bottom: 18px;
+}
+&__dollars {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: $FontColor;
+}
+}
+.footer__nach {
+    background: url(../img/button_subscribe.png) no-repeat;
+    background-size: cover;
+    height: 448px;
+    &__glovo{
+      display: flex;
+      justify-content: space-between;
+    }
+&__left {
+  background: url("../img/Intersect.png") no-repeat;
+  width: 360px;
+  margin-top: 97px;
+  background-position: top center;
+  /*для картинки центрировать*/
+}
+&__right {
+  display: flex;
+  flex-direction: column;
+}
+&__leftword {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+  margin-top: 138px;
+}
+&__rightword {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+  margin-top: 150px;
+}
+&__rightpara {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+  margin-bottom: 32px;
+}
+&__email {
+  display: flex;
+}
+&__email--field{
+  width: 256px;
+    height: 49px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    background: #E1E1E1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222224;
+    opacity: 0.67;
+    text-align: center;
+    padding: 7px 64px 6px 10px;
+}
+&__email--btn{
+  width: 100px;
+  height: 49px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  text-align: center;
+  background: $FontColor;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 7px 7px 6px 8px;
+}
+}
+&__foot{
+  background-color: #222222;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__footogether {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__footright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+&__footbrand {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+&__footicons {
+  margin: 24px 7px;
+}
+&__footicons:not(:last-child) {
+  margin-right: 7px;
+}
+&__foottest {
+  fill: white;
+}
+&__foottest:hover {
+  fill: $FontColor;
+}
+&__foottext {
+  fill: black;
+}
+&__foottext:hover {
+  fill: white;
+}
+}
