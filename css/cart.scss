@@ -16,18 +16,15 @@ $SlidColorAct:lightgray;
  border: none;
 background-color: transparent;
 }
-
 body {
   font-family: "Lato";
 }
-
 .container {
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
 }
-
 .header{
     background: #222222;
     color: white;
@@ -45,8 +42,6 @@ body {
           }
        
       }
-
-
 .arrivals{
         &__new {
           background: #F8F3F4;
@@ -68,7 +63,8 @@ body {
           color: $FontColor;
           text-decoration: none;
         }
-}.cart {
+}
+.cart {
 margin: 96px 0 128px 0;
   &__duble {
     display: flex;
@@ -110,7 +106,6 @@ font-size: 24px;
 line-height: 29px;
 color: #222222;
 margin-bottom: 42px;
-
 }
 &__imgtext p {
   font-style: normal;
@@ -124,10 +119,8 @@ color: #575757;
 font-weight: bold;
 font-size: 22px;
 line-height: 26px;
-
 color: #EF5B70;
 }
-
 &__cube span {
   border: 1px solid #E1E1E1;
   font-style: normal;
@@ -148,7 +141,6 @@ padding: 17px 40px 16px 39px;
 color: #000000;
 background: #FFFFFF;
 }
-
 &__bangladesh {
  width: 360px;
  height: 272px; 
@@ -236,13 +228,11 @@ color: #F16D7F;
   }
 
 }
-
 .footer {
 &__nach {
   background: url(../img/button_subscribe.png) no-repeat;
   background-size: cover;
   height: 448px;
-  
 }
 &__glovo {
 display: flex;
@@ -319,8 +309,6 @@ justify-content: space-between;
     padding: 7px 7px 6px 8px;
   }
 }
-
-
 .second{
 &__foot {
   background-color: #222222;
