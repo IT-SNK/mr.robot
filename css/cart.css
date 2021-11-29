@@ -3,7 +3,6 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
   background-color: transparent;
@@ -25,25 +24,16 @@ body {
   color: white;
   padding: 19px 0;
 }
-
 .header__headerlogo {
   text-decoration: none;
   margin-right: 41px;
 }
-
 .header__headerwrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   /*выравнивание по центру по вертикали*/
 }
-
 .header__headeritem:not(:last-child) {
   margin-right: 33px;
 }
@@ -51,26 +41,17 @@ body {
 .arrivals__new {
   background: #F8F3F4;
 }
-
 .arrivals__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .arrivals__left {
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
   margin: 65px 0 66px 0;
 }
-
 .arrivals__text {
   font-style: normal;
   font-weight: bold;
@@ -83,61 +64,37 @@ body {
 .cart {
   margin: 96px 0 128px 0;
 }
-
 .cart__duble {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .cart__up {
   width: 652px;
   height: 306px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 40px;
   background: url("../img/XXX.svg") no-repeat 610px 30px;
-  -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
-          box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
-
 .cart__down {
   width: 652px;
   height: 306px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   background: url("../img/XXX.svg") no-repeat 610px 30px;
-  -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
-          box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
-
 .cart__clear {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 72px;
 }
-
 .cart__imgtext {
   width: 390px;
   height: 306px;
   margin: 22px 97px 62px 31px;
 }
-
 .cart__imgtext h3 {
   width: 209px;
   height: 58px;
@@ -148,7 +105,6 @@ body {
   color: #222222;
   margin-bottom: 42px;
 }
-
 .cart__imgtext p {
   font-style: normal;
   font-weight: bold;
@@ -156,7 +112,6 @@ body {
   line-height: 30px;
   color: #575757;
 }
-
 .cart__hundred {
   font-style: normal;
   font-weight: bold;
@@ -164,7 +119,6 @@ body {
   line-height: 26px;
   color: #EF5B70;
 }
-
 .cart__cube span {
   border: 1px solid #E1E1E1;
   font-style: normal;
@@ -175,7 +129,6 @@ body {
   padding: 1px 17px;
   margin-left: 24px;
 }
-
 .cart__btn a {
   border: 1px solid #A4A4A4;
   font-weight: 300;
@@ -186,12 +139,10 @@ body {
   color: #000000;
   background: #FFFFFF;
 }
-
 .cart__bangladesh {
   width: 360px;
   height: 272px;
 }
-
 .cart__bangladesh input {
   width: 360px;
   height: 45px;
@@ -200,7 +151,6 @@ body {
   padding: 13px 243.59px 16px 17.24px;
   margin-bottom: 20px;
 }
-
 .cart__bangladesh h3 {
   font-style: normal;
   font-weight: 300;
@@ -209,13 +159,11 @@ body {
   color: #222222;
   margin-bottom: 20px;
 }
-
 .cart__secbtn {
   padding: 10px 14px 12px 15px;
   border: 1px solid #A4A4A4;
   margin-top: 23px;
 }
-
 .cart__secbtn a {
   text-decoration: none;
   font-weight: 300;
@@ -223,30 +171,24 @@ body {
   line-height: 13px;
   color: #4A4A4A;
 }
-
 .cart__total {
   width: 360px;
   height: 214px;
   background: #F5F3F3;
   margin-top: 75px;
 }
-
 .cart__total h6 {
   font-style: normal;
   font-weight: bold;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
   padding: 39px 32px 12px 218px;
 }
-
 .cart__total span {
   margin-left: 26px;
 }
-
 .cart__total p {
   font-style: normal;
   font-weight: 300;
@@ -255,29 +197,23 @@ body {
   color: #222222;
   padding: 12px 0px 21px 153px;
 }
-
 .cart__ninehun {
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
 }
-
 .cart__line {
   margin: 0 auto;
   width: 275px;
   border-bottom: 1px solid #E2E2E2;
 }
-
 .cart__btnend {
   border: 1px solid #F16D7F;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   margin-top: 17px;
 }
-
 .cart__btnend a {
   text-decoration: none;
   font-style: normal;
@@ -294,16 +230,10 @@ body {
   background-size: cover;
   height: 448px;
 }
-
 .footer__glovo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .footer__left {
   background: url("../img/Intersect.png") no-repeat;
   width: 360px;
@@ -311,17 +241,10 @@ body {
   background-position: top center;
   /*для картинки центрировать*/
 }
-
 .footer__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .footer__leftword {
   font-style: normal;
   font-weight: normal;
@@ -331,7 +254,6 @@ body {
   color: #222224;
   margin-top: 138px;
 }
-
 .footer__rightword {
   font-weight: bold;
   font-size: 24px;
@@ -340,7 +262,6 @@ body {
   color: #222224;
   margin-top: 150px;
 }
-
 .footer__rightpara {
   font-style: normal;
   font-weight: normal;
@@ -350,13 +271,9 @@ body {
   color: #222224;
   margin-bottom: 32px;
 }
-
 .footer__email {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .footer__email--field {
   width: 256px;
   height: 49px;
@@ -372,7 +289,6 @@ body {
   text-align: center;
   padding: 7px 64px 6px 10px;
 }
-
 .footer__email--btn {
   width: 100px;
   height: 49px;
@@ -392,41 +308,20 @@ body {
 .second__foot {
   background-color: #222222;
   color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.second__footogether {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.second__footright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: center;
   align-items: center;
 }
-
+.second__footogether {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.second__footright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .second__footbrand {
   font-style: normal;
   font-weight: normal;
@@ -434,28 +329,22 @@ body {
   line-height: 19px;
   color: #FBFBFB;
 }
-
 .second__footicons {
   margin: 24px 7px;
 }
-
 .second__footicons:not(:last-child) {
   margin-right: 7px;
 }
-
 .second__foottest {
   fill: white;
 }
-
 .second__foottest:hover {
   fill: #F16D7F;
 }
-
 .second__foottext {
   fill: black;
 }
-
 .second__foottext:hover {
   fill: white;
 }
-/*# sourceMappingURL=cart.css.map */
+/*# sourceMappingURL=cart.css.map *//*# sourceMappingURL=cart.css.map */
