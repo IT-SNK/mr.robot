@@ -91,21 +91,78 @@ body {
 }
 
 .filter {
-  margin: 51px 0px 64px 0px;
+  width: 360px;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+}
+.filter__all {
+  display: flex;
+}
+.filter__glfilter {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.filter [open] {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+  fill: #EF5B70;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.16);
+}
+.filter[open] > summary {
+  color: #EF5B70;
+  outline: none;
+  border: none;
+  fill: #EF5B70;
+}
+.filter__title {
+  margin-bottom: 10px;
+}
+.filter__cat {
+  display: block;
+  border-left: 5px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 11px;
+  padding-left: 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #EF5B70;
+  position: relative;
 }
 .filter__content {
   position: absolute;
   background-color: #FFFFFF;
   width: 360px;
   left: 0;
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.16);
+  padding: 13px 0 0 10px;
 }
-.filter__all {
-  display: flex;
+.filter__item {
+  list-style-type: none;
+}
+.filter__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 34px;
+  text-decoration: none;
+  color: #6F6E6E;
 }
 .filter__right {
   display: flex;
-  margin-left: 400px;
+  margin-left: 30px;
 }
 .filter__menu {
   text-transform: uppercase;
@@ -115,106 +172,56 @@ body {
   line-height: 17px;
   color: #6F6E6E;
   outline: none;
-  /* убрать границы option */
   background: #FFFFFF;
-}
-.filter__round {
-  background: #FFFFFF;
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
-.filter__left {
-  position: absolute;
-  outline: none;
-  border: none;
-}
-.filter__down {
-  display: block;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  color: #000000;
-  margin-left: 10px;
-}
-.filter__down:hover {
-  color: #F16D7F;
-  background: #FFFFFF;
-}
-.filter__up {
-  width: 100px;
-  background-color: #FFFFFF;
-  box-sizing: border-box;
-  position: relative;
-  outline: none;
-  border: none;
-}
-.filter__up[open] {
-  width: 360px;
-  margin-bottom: 20px;
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
-.filter__up[open] > summary {
-  color: #F16D7F;
-  outline: none;
-  border: none;
 }
 .filter__ladder {
   margin-left: 11px;
-}
-.filter__ladder:hover {
-  fill: #F16D7F;
-}
-.filter__catlist {
-  position: relative;
-  background-color: #FFFFFF;
-  width: 360px;
-  border: 1px solid #EBEBEB;
-}
-.filter__deep {
-  display: block;
-  border-left: 5px solid #EF5B70;
-  border-bottom: 1px solid #EBEBEB;
-  padding: 15px;
-  outline: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  margin: 20px 0 0px 10px;
-  color: #EF5B70;
-}
-.filter__deep:nth-child(3) {
-  margin-bottom: 0px;
-}
-.filter__points {
-  width: 360px;
-  height: 335px;
-  list-style-type: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 29px;
-  color: #6F6E6E;
-  padding: 17px 0 0 17px;
-}
-.filter__points a {
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #6F6E6E;
-}
-.filter__items {
-  margin-right: 28px;
 }
 
 .mens {
   width: 360px;
   height: 581px;
   margin: 0 20px 30px 0;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
 }
 .mens__all {
   margin: 100px 0 48.5px 0;
+}
+.mens:hover {
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.mens:hover .mens__add {
+  opacity: 1;
+}
+.mens__btn {
+  display: flex;
+  font-style: normal;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: rgba(58, 56, 56, 0.83);
+  color: #FFFFFF;
+  padding: 13.73px 15.91px 12.27px 0;
+  border: 1px solid #FFFFFF;
+}
+.mens__svgbtn {
+  margin: 10.79px 11.04px 8.23px 13.06px;
+}
+.mens__add {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 420px;
+  background-color: rgba(58, 56, 56, 0.83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
 }
 .mens__wrap {
   display: flex;
