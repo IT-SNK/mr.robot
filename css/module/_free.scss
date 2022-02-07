@@ -1,0 +1,31 @@
+.free {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+align-items: center;
+&__sales {
+    background: #222222;
+    color: white;
+    height: 341px;
+}
+&__item {
+    text-align: center;
+}
+&__text{
+    padding: 19.07px 0 16.01px 0;
+    font-style: normal;
+font-weight: normal;
+font-size: $FontFree;
+line-height: 24px;
+color: #FBFBFB;
+    }
+    &__para{
+        width:300px;
+        height: 34px;
+        font-weight: 300;
+        font-size: $FontPara;
+        line-height: 17px;
+        text-align: center;
+        color: #FBFBFB;
+    }
+}

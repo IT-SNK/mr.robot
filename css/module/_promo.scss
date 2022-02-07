@@ -1,0 +1,36 @@
+.promo {
+    background: #F1E4E6;
+    height: 764px;
+    &__title{
+        max-width: 377px;
+        padding-left: 5px;
+        border-left: 12px solid #F16D7F;
+        margin-right: 94px;
+    }
+
+    &__title h2 {
+        width: 377px;
+        font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 38px;
+color: #222222;
+    }
+    &__brand {
+        font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 58px;
+color: #222222;
+    }
+    &__wrap {
+        height: 100%;/*для выравнывание по высоти от родителя*/
+        display: flex;
+        justify-content: flex-end; /*прижать по правой стороне*/
+        align-items: center;
+        background: url('../img/muzhik.png')no-repeat -228px;
+    }
+    &__decor {
+        color: $FontColor;
+    }
+}

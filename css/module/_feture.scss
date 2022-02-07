@@ -1,0 +1,115 @@
+.feture {
+    margin: 100px 0 100px 0;
+    &__text a {
+        text-decoration: none;
+    }
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    &__glovo {
+        text-align: center;
+        margin: 96px 0 57px 0;
+     }
+     &__first {
+        font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #222222;
+    }
+    &__second {
+        font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $FontKnow;
+    line-height: 17px;
+    color: #9F9F9F;
+    }
+    &__item {
+        width: 360px;
+        height: 581px;
+        margin: 0 20px 30px 0;
+        overflow: hidden;
+        position: relative;
+        transition: 0.5s;
+    }
+    &__item:hover {
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+      }
+    &__item:hover &__add {
+        opacity: 1;
+      }
+    &__btn{
+        display: flex;
+        font-style: normal;
+        align-items: center;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+background-color: rgba(58, 56, 56, 0.83);
+color: #FFFFFF;
+padding:13.73px 15.91px 12.27px 0 ;
+        border: 1px solid #FFFFFF;
+        cursor: pointer;
+    }
+    &__svgbtn {
+        margin: 10.79px 11.04px 8.23px 13.06px;
+    }
+    &__add {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 420px;
+        background-color: rgba(58, 56, 56, 0.83);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        opacity: 0;
+        transition: 0.5s;
+    }
+    //&__item:nth-child(odd){
+       // margin: 0 20px 30px 0;
+    //}
+    &__imgs--women {
+        background: #F7E4E2;
+      }
+      &__only--women{
+        margin: 9px 110.06px 8px 108px;
+      }
+      &__text {
+        margin: 25.35px 28.8px 20px 16.46px;
+    }
+    &__elle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: $FontElle;
+        line-height: 16px;
+        color: #000000;
+        margin-bottom: 12.65px;
+    }
+    &__know {
+        width: 314.74px;
+        height: 51px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: $FontKnow;
+        line-height: 17px;
+        color: #5D5D5D;
+        margin-bottom: 18px;
+    }
+    &__dollars{
+        font-weight: normal;
+        font-size:$FontSize;
+    line-height: 19px;
+    color: #F16D7F;
+    }
+}
+
+
+
+

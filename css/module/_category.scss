@@ -1,0 +1,51 @@
+.category {
+    margin: 100px 0 100px 0;
+    &__catwrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__catitem {
+        box-shadow: inset 0 0 240px 1px rgb(19, 6, 6);
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/women.jpg')no-repeat;
+   
+    }
+    &__catitem:nth-child(2) {
+        background: url('../img/muzhik__3.jpg')no-repeat;
+        
+    }
+    &__catitem:nth-child(3) {
+        background: url('../img/boy.jpg')no-repeat;
+       
+    }
+    &__catitem:nth-child(4){
+        background: url('../img/width__photo.jpg')no-repeat;
+        }
+        &__catitem:not(:last-child){
+            width: 360px;
+            height: 260px;
+            margin: 0 0 30px 0;
+        }
+        &__catspan {
+            font-style: normal;
+        font-weight: normal;
+        font-size: $FontSize;
+        line-height: 19px;
+        color: #FFFFFF;
+        }
+        &__cattext {
+            text-align: center;
+        }
+        &__catdown {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: #F16D7F;
+        }
+}
+

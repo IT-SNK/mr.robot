@@ -1,0 +1,128 @@
+.wrap {
+    margin-top: 100px;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid #E5E5E5;
+  }
+  .slider {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*// position: relative;*/
+    padding-bottom: 50px;
+    &-btn {
+      background-color: $SlidColorAct;
+      color: #fff;
+      padding: 10px;
+      border: 1px solid rgb(241, 237, 237);
+      /*// position: absolute;*/
+    }
+    &__secondboth {
+      width: 642px;
+      border: 1px solid #EAEAEA;
+      margin-bottom: 64.54px;
+    }
+    &__both {
+      width: 63px;
+      border: 2px solid $FontColor;
+      margin-bottom: 12.1px;
+    }
+    &-btn-left, &-btn-right:hover{
+      color: pink;
+      background-color:$SlidColorAct;
+    }
+    &-btn:active {
+      background-color: #7a7575;;
+  }
+  &__lpress:hover{
+    fill: $FontColor;
+  }
+  &__rpress:hover{
+    fill: $FontColor;
+  }
+  &__about-wrap {
+    width: 1121px;
+    height: 600px;
+    background: #FFFFFF;
+    margin-top: -50px;
+    margin-bottom: 131px;
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  }
+&__info h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size:$FontKnow;
+  line-height: 17px;
+  color: $FontColor;
+  margin: 64px 0 12.1px 0;
+}
+&__info h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  margin-bottom: 48.41px;
+}
+&__button {
+  margin-bottom: 61.5px;
+}
+&__info p{
+  font-family: "Lato";
+  font-style: normal;
+  width: 553px;
+  height: 51.43px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $FontKnow;
+  line-height:17px;
+  text-align: center;
+  margin-bottom: 32.22px;
+  color: #5E5E5E;
+}
+&__curtain {
+  @include CenterAll;
+}
+&__info span{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 64.54px;
+  color:$FontColor;
+}
+&__menu {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  outline: none;
+  color: #6F6E6E;
+  margin: 0 22px 48.41px 0;
+}
+&__web a {
+  color:$FontColor;
+  text-decoration: none;
+  border: 1px solid $FontColor;
+  padding: 15.13px 57px 14.12px 22.99px;
+  background: white;
+}
+&__kor{
+  margin: 0 22px 0 24px;
+}
+&__ssilka{
+@include CenterAll;
+text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+}

@@ -1,0 +1,54 @@
+.arrivals{
+    &__new {
+        background:#F8F3F4;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        &__left {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            margin: 65px 0 66px 0;
+            }
+            &__text {
+              animation: 2s test;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 29px;
+                color: #F16D7F;
+                text-decoration: none;
+                }
+                &__right {
+                    display: flex;
+                    justify-content: space-between;
+                    list-style-type: none;
+                        /*border-left: 1px solid #636363;*/
+                    }
+                    &__right a{
+                        text-decoration: none;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #636363;
+                        }
+                        &__right a:nth-child(3){
+                            color: #F16D7F;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 14px;
+                            line-height: 17px;
+                            text-decoration: none;
+                            }
+                            &__right a:nth-child(1)::after{
+                                content:"/";
+                                margin: 0 5px 0 5px;
+                                }
+                                &__right a:nth-child(2)::after{
+                                    content:"/";
+                                    margin: 0 5px 0 5px;
+                                    }
+}
