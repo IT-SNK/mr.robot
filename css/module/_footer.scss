@@ -1,0 +1,145 @@
+
+.subscriptions {
+    background: url(../img/button_subscribe.png)no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    -webkit-backdrop-filter: contrast(0.8);
+    backdrop-filter: contrast(0.8);
+    &__wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        min-height: 448px;
+    }
+    &__slogan {
+        text-align: center;
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #222224;
+        padding-top: 30px;
+        max-width: 360px;
+    }
+    &__text_italic {
+        font-style: italic;
+    }
+    &__heading {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 167.2%;
+        text-align: center;
+        color: #222224;
+    }
+    &__subtitle {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 167.2%;
+        text-align: center;
+        color: #222224;
+    }
+    &__form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 32px;
+    }
+    &__input {
+        background: #e1e1e1;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #222224;
+        opacity: 0.67;
+        padding: 15px 15px 15px 28px;
+        border-radius: 23px 0 0 23px;
+        border: none;
+        width: 100%;
+    }
+    &__form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 32px;
+    }
+    &__button {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        background: #f16d7f;
+        padding: 15px 20px;
+        border-radius: 0 23px 23px 0;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.footer {
+    background-color: #222224;
+    &__wrap {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    &__copy{
+        font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #FBFBFB;
+    }
+    &__socials {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    &__foottest {
+        fill: white;
+      }
+      &__foottest:hover {
+        fill: $FontColor;
+        color: #FFFFFF;
+      }
+      &__foottext:hover {
+        fill: white;
+      }
+      &__socials a{
+        margin: 24px 7px;
+      }
+      &__foottext {
+        fill: black;
+      }
+
+}
+
+

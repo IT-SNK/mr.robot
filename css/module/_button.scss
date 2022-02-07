@@ -1,0 +1,28 @@
+.button{
+    margin-bottom: 95px;
+    &__btn {
+     display: flex;
+     justify-content: center;
+ }
+ &__info {
+     width: 220px;
+     height: 48px;
+     transition: all 2s ; 
+     }
+     &__info:hover {
+         transform: rotate(360deg);   
+   }
+     &__ssilka:hover{
+         box-shadow: #F16D7F;
+         border-radius: 10px;
+         color: #FFFFFF;
+         background-color: #F16D7F;
+     }
+     &__ssilka {
+         padding: 14px 38px;
+         text-decoration: none;
+         color: #F16D7F;
+         border: 1px solid #F16D7F;
+         transition: all 2s, border-radius 2s; 
+     }
+ }

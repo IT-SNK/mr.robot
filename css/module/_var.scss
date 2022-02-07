@@ -1,3 +1,33 @@
-$ff: "Lato";
-$FontColor: #F16D7F;
-$Bg:#F8F3F4;
+@mixin CenterAll() {
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  @mixin Column() {
+      display: flex;
+    flex-direction: column;
+}
+@keyframes test {
+  from {
+margin-left: 0;
+  }
+  to {
+margin-left: 300px;
+  }
+}
+
+
+
+
+$FontColor:#F16D7F;
+$SlidColorAct:lightgray;
+$FontElle:13px;
+$FontKnow:14px;
+$FontSize:16px;
+$FontFree:19.96px;
+$FontPara:13.972px;
+$FontCart:24px;
+$FontCartP:22px;
+$FontTotal:11px;
+
+

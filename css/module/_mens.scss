@@ -1,0 +1,90 @@
+.mens{
+    width: 360px;
+    height: 581px; 
+    margin:0 20px 30px 0;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    &__all {
+        margin: 0px 0 48.5px 0;
+    }
+ 
+    &:hover {
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+      }
+    &:hover &__add {
+        opacity: 1;
+      }
+    &__btn{
+        display: flex;
+        font-style: normal;
+        align-items: center;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+background-color: rgba(58, 56, 56, 0.83);
+color: #FFFFFF;
+padding:13.73px 15.91px 12.27px 0 ;
+        border: 1px solid #FFFFFF;
+    }
+    &__svgbtn {
+        margin: 10.79px 11.04px 8.23px 13.06px;
+    }
+    &__add {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 420px;
+        background-color: rgba(58, 56, 56, 0.83);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__onlyafro {
+        background: #F7E4E2;
+    }
+    &__afroimg {
+        margin: 9px 110.06px 8px 108px;
+       }
+       &__text {
+        margin: 25.35px 0px 0px 18px;
+    }
+    &__text a{
+        text-decoration: none;
+    }
+    &__text a{
+        text-decoration: none;
+    }
+    &__firstext {
+        font-style: normal;
+        font-weight: normal;
+        font-size: $FontElle;
+        line-height: 16px;
+        color: #000000;
+    }
+    &__paragrph {
+        width: 314.74px;
+        height: 51px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: $FontKnow;
+        line-height: 17px;
+        color: #5D5D5D;
+        margin-top: 12.65px;
+        margin-bottom: 18px;
+        }
+        &__fiftytwo {
+            font-weight: normal;
+             font-size: $FontSize;
+             line-height: 19px;
+             color: #F16D7F;
+         margin-top: 18px;
+         }
+}

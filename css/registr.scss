@@ -4,10 +4,7 @@
 @import 'module/container';
 @import 'module/header';
 @import 'module/arrivals';
-@import 'module/filter';
-@import 'module/mens';
-@import 'module/catbutton';
-@import 'module/free';
+@import 'module/check';
 @import 'module/footer';
 
 
@@ -18,3 +15,5 @@
 @media screen and (max-width:375px){
   @import 'module/mobile';
 }
+
+  

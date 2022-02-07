@@ -1,0 +1,77 @@
+.check{
+    margin: 64px 0 96px 0;
+    &__all{
+      display: flex;
+      justify-content: space-between;  
+      }
+      &__left {
+        width: 359px;
+        height: 506px;
+      }
+      &__left h3 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20.5px;
+  color: #222222;
+      }
+      &__fm {
+        margin:0 10px 35px 0;
+            }
+        &__info {
+          border: 1px solid gray;
+          display:block;
+          padding: 12.5px 277.86px 16px 17.24px;
+          margin-bottom: 20px;
+      }
+      &__info:not(:nth-child(2)){
+        margin-bottom: 31px;
+       }
+       &__male{
+        margin-right: 20px;
+            }
+      &__right{
+        max-width: 652px;
+        height: 334px;
+      padding:0 0 0 128.51px;
+      }
+      &__text h6 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 22px;
+        }
+        &__text p{
+          font-style: normal;
+          font-weight: 300;
+          font-size: 24px;
+          line-height: 29px;
+          color: #000000;
+          margin-bottom: 21px;
+  }
+  &__list li{
+    font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  list-style-type: none;
+  list-style-image: url('../img/galochka.svg');
+  margin-left: 22.6px;
+  }
+  &__btn{
+    border: 1px solid #F16D7F;
+    background:#F16D7F;
+    color: #FFFFFF;
+    padding: 16px 66px 17px 29px;
+    transition: all 2s
+  }
+  &__btn:hover {
+    transform: rotate(360deg);
+  }
+  }
+  .fal fa-long-arrow-right {
+    fill: azure;
+  }

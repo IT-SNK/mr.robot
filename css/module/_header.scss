@@ -1,3 +1,97 @@
 
-
-
+.header {
+  background: #222222;
+  color: white;
+  padding: 19px 0;
+  &__item {
+    text-decoration: none;
+    margin-right: 33px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*выравнивание по центру по вертикали*/
+  }
+  &__item  {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  &__item:not(:last-child) {
+    margin-right: 33px;
+  }
+  &__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  &__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  &__catalog-menu {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;/*можно display: block;*/
+  }
+  summary {
+    list-style-type: none;
+  }
+  summary:hover {
+    opacity: 0.3;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 14.38%;
+    height: 764px;
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgb (0 0 0 / 21%);
+    left: 85.6%;
+    top: 79px;
+    z-index: 1;
+  }
+  .menu-head {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding-left: 34px;
+    padding-top: 37px;
+  }
+  .list-man-head {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #f16d7f;
+    padding-left: 33px;
+    padding-top: 24px;
+  }
+  .list-man {
+    padding-left: 55px;
+    padding-top: 11px;
+    list-style-type: none;
+  }
+  .list-man__item {
+    padding-top: 11px;
+  }
+  .menu__link {
+    padding-top: 11px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+    text-decoration: none;
+  }
+}
